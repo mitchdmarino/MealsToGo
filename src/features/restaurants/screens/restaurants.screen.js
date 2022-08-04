@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, SafeAreaView, StatusBar } from "react-native";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { Searchbar } from "react-native-paper";
 
-import { RestaurantInfo } from "../components/restaurant-info.component";
+import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 
 export const RestaurantsScreen = () => {
   return (
@@ -13,7 +13,7 @@ export const RestaurantsScreen = () => {
           <Searchbar />
         </View>
         <View style={styles.listBox}>
-          <RestaurantInfo />
+          <RestaurantInfoCard />
         </View>
       </SafeAreaView>
       <ExpoStatusBar style="auto" />
